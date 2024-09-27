@@ -54,7 +54,7 @@ esac
 # nvim start
 export PATH="$HOME/.tmuxifier/bin:$PATH"
 
-eval "$(tmuxifier init-)"
+eval "$(tmuxifier init -)"
 
 alias tls="tmuxifier ls"
 alias tlw="tmuxifier lw"
