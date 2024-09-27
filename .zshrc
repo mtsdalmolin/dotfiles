@@ -12,6 +12,9 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+alias _exa="exa --icons"
+alias ls="exa --icons"
+
 # Added by Amplify CLI binary installer
 export PATH="$HOME/.amplify/bin:$PATH"
 
@@ -47,3 +50,12 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
+# nvim start
+export PATH="$HOME/.tmuxifier/bin:$PATH"
+
+eval "$(tmuxifier init-)"
+
+alias tls="tmuxifier ls"
+alias tlw="tmuxifier lw"
+# nvim end
