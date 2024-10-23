@@ -23,15 +23,6 @@ export PATH="$HOME/.amplify/bin:$PATH"
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-####################[ node_version: node.js version ]#####################
-# Show node version only when in a directory tree containing package.json.
-typeset -g POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(
-  nodenv          # node.js version from nodenv (https://github.com/nodenv/nodenv)
-  nvm             # node.js version from nvm (https://github.com/nvm-sh/nvm)
-  nodeenv         # node.js environment (https://github.com/ekalinin/nodeenv)
-  node_version    # node.js version
-)
-
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
