@@ -5,6 +5,8 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+autoload -U compinit && compinit
+
 export PATH="/opt/homebrew/bin:$PATH"
 # export NPM_TOKEN=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
 export NPM_TOKEN=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
