@@ -44,11 +44,8 @@ case ":$PATH:" in
 esac
 # pnpm end
 
-# nvim start
-export PATH="$HOME/.tmuxifier/bin:$PATH"
-
-eval "$(tmuxifier init -)"
-
-alias tls="tmuxifier ls"
-alias tlw="tmuxifier lw"
-# nvim end
+# tmux start
+alias tx=tmuxinator
+export EDITOR=nvim
+# tmux end
+export PATH="/opt/homebrew/opt/curl/bin:$PATH"
