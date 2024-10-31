@@ -12,6 +12,12 @@ return {
     'nvim-telescope/telescope-ui-select.nvim',
     config = function()
       require("telescope").setup {
+        pickers = {
+          find_files = {
+            -- `hidden = true` will still show the inside of `.git/` as it's not `.gitignore`d.
+            find_command = { "rg", "--files", "--hidden", "--glob", "!**/.git/*" },
+          },
+        },
         extensions = {
           ["ui-select"] = {
             require("telescope.themes").get_dropdown {
