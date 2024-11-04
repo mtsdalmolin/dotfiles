@@ -9,12 +9,13 @@ return {
   },
   config = function()
     vim.keymap.set("n", "<C-n>", ":Neotree filesystem reveal left<CR>", {})
+    vim.keymap.set("n", "<leader>g", ":Neotree float git_status git_base=main<CR>", {})
 
     require("neo-tree").setup({
       use_libuv_file_watcher = true,
       filesystem = {
         follow_current_file = {
-          enabled = true,            -- This will find and focus the file in the active buffer every time
+          enabled = true, -- This will find and focus the file in the active buffer every time
         },
       }
     })
