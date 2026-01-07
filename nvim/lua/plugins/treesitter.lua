@@ -2,7 +2,7 @@ return {
   "nvim-treesitter/nvim-treesitter",
   build = ":TSUpdate",
   config = function()
-    local tsconfig = require("nvim-treesitter.configs")
+    local tsconfig = require("nvim-treesitter")
     tsconfig.setup({
       auto_install = true,
       highlight = { enable = true },
